@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TERCEIRA PÁGINA</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        nav {
+            background-color: #f4f4f4;
+            padding: 10px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .content {
+            display: flex;
+        }
+        .text {
+            flex: 3;
+            padding-right: 20px;
+        }
+        .images {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .images img {
+            width: 100%;
+            height: auto;
+            background-color: #ddd;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        form {
+            margin-top: 20px;
+        }
+        label {
+            font-size: 1.1em;
+            margin-bottom: 10px;
+            display: block;
+        }
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+        input[type="submit"] {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Introdução</a>
+        <a href="pag1.html">Origem</a>
+        <a href="pag2.html">Considerações Finais</a>
+    </nav>
+    <h1>O ARQUÉTIPO DO TRAPACEIRO</h1>
+    <div class="content">
+        <div class="text">
+            <p>A figura de uma divindade enganadora/ardilosa aparece nas mais diversas mitologias do mundo inteiro. Convém lembrar, pois, que as mitologias eram outrora crenças religiosas tão válidas como quaisquer outras existentes nos dias de hoje. O malandro era reconhecido como um deus ou uma emanação de uma divindade suprema que interferia na vida de outros deuses, dos seres humanos e do mundo natural; ele assim alterava o equilíbrio para que as coisas fossem realinhadas e modificadas (às vezes por algum motivo específico ou sem ter razão alguma).
+                 Por mais desagradável que fosse a experiência com o "<i>trickster</i>", a vítima de seus ardis era forçada a sair da sua zona de conforto para transcender a um novo estado de consciência de si própria e do mundo.</p>
+                <p>Uma das figuras mais conhecidas desse arquétipo é <i>Loki</i>, da mitologia nórdica, que antagoniza repetidamente os deuses de <i>Asgard</i>, assim como é responsável pela origem de vários dos artefatos mágicos mais renomados, incluindo o martelo de <i>Thor</i> e a lança de <i>Odin</i>.
+                     Não obstante, o perfil do engana-trouxa aparece em muitos outros sistemas de crenças, incluindo o <i>Coiote</i> nas religiões indígenas norte-americanas; <i>Exu</i> dos iorubás da África Ocidental, e o <i>Olho de Rá</i> na antiga religião egípcia.</p>
+        </div>
+        <div class="images">
+            <img src="images/babayaga2.jpg" alt="Imagem final ilustrando a Baba Yaga">
+        </div>
+    </div>
+
+    <h2>Outras Figuras Mitológicas da Cultura Eslava</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Figura/Lenda</th>
+                <th>Ano Aproximado</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><i>Baba Yaga</i></td>
+                <td>Século XVIII</td>
+            </tr>
+            <tr>
+                <td><i>Kikimora</i></td>
+                <td>Século XIX (oral)</td>
+            </tr>
+            <tr>
+                <td><i>Vila</i></td>
+                <td>Século XV (oral)</td>
+            </tr>
+            <tr>
+                <td><i>Poludnitsa</i></td>
+                <td>Século XIX (oral)</td>
+            </tr>
+            <tr>
+                <td><i>Rusalka</i></td>
+                <td>Século XIX (oral)</td>
+            </tr>
+            <tr>
+                <td><i>Koschei, o Imortal</i></td>
+                <td>Século XIX (oral)</td>
+            </tr>
+            <tr>
+                <td><i>Zmey Gorynych</i></td>
+                <td>Século IX (oral)</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <form action="#" method="post">
+        <label for="feedback">Gostou do conteúdo?</label><br>
+        <input type="radio" id="sim" name="feedback" value="sim">
+        <label for="sim">Sim</label>
+        <input type="radio" id="nao" name="feedback" value="nao">
+        <label for="nao">Não</label><br>
+
+        <label for="avaliacao">Avalie o site de 1 a 10:</label><br>
+        <input type="number" id="avaliacao" name="avaliacao" min="1" max="10" required><br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>

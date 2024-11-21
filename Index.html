@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAGINA INICIAL</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        nav {
+            background-color: #f4f4f4;
+            padding: 10px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .content {
+            display: flex;
+        }
+        .text {
+            flex: 3;
+            padding-right: 20px;
+        }
+        .images {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .images img {
+            width: 100%;
+            height: auto;
+            background-color: #ddd; /* Placeholder */
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        form {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-bottom: 8px;
+        }
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+        select, input[type="submit"] {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Introdução</a>
+        <a href="pag1.html">Origem</a>
+        <a href="pag2.html">Considerações Finais</a>
+    </nav>
+    <h1>A LENDA DA BABA YAGA</h1>
+    <div class="content">
+        <div class="text">
+            <p><i>Baba Yaga</i> é uma bruxa ou ogra do folclore eslavo que vive numa cabana mágica na floresta e ajuda, aprisiona ou come pessoas (normalmente crianças).
+                 É uma das figuras mais famosas do folclore eslavo como guardiã das fontes da águas da vida e a personificação do poder e da independência femininos.</p>
+                 <p>O seu nome é muitas vezes traduzido como "Avó Bruxa", embora esse termo seja contestado e não haja um consenso sobre o significado de <i>Yaga</i>.
+                     Foi mencionada pela primeira vez num livro de gramática russa em 1755, mas se pensa que já existia na tradição oral dos contos populares eslavos muito antes. Geralmente ela é a vilã de qualquer peça em que se apresente; porém, muito além do que uma mera bruxa maléfica, ela personifica uma figura auxiliadora e trapaceira que encoraja o autodesenvolvimento.</p>
+                     <p><i>Baba Yaga</i> é provavelmente mais conhecida na história de <i>Vasilissa, a Bela</i>, em que inadvertidamente liberta a heroína da tirania da madrasta e das meias-irmãs. Além desse conto, também aparece noutros famosos, como <i>A Princesa-Sapo</i> e <i>Baba Yaga and the Kind-Hearted Girl</i>, desempenhando papéis semelhantes.
+                         Algumas de suas narrativas seguem o paradigma da história da <i>Cinderela</i>, em que a ogra protagoniza a função da <i>Fada Madrinha</i> com características obviamente mórbidas.</p>
+                            <p>Como vive fora das normas da sociedade e segue sempre as suas próprias regras, passou a encarnar o conceito de poder e emancipação femininos na era moderna. Livros, filmes e programas de televisão aludem-lhe nesse papel e, embora mantenha o seu carácter ameaçador, é cada vez mais vista como uma fonte de sabedoria e vigor do que somente a representação do mal.</p>
+        </div>
+        <div class="images">
+            <img src="images/babayaga1.jpg" alt="Imagem ilustrando a entidade Baba Yaga">
+            <img src="images/casa1.jpg" alt="Imagem ilustrando a da casa da Baba Yaga em seu estado normal">
+        </div>
+    </div>
+
+    <h2>Obras em que a personagem folclórica apareceu</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>História</th>
+                <th>Ano de Lançamento</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><i>Vassalisa, a Bela</i></td>
+                <td>Século XIX</td>
+            </tr>
+            <tr>
+                <td><i>O Conto da Baba Yaga</i></td>
+                <td>Século XIX</td>
+            </tr>
+            <tr>
+                <td><i>Baba Yaga e o Feiticeiro</i></td>
+                <td>Século XIX</td>
+            </tr>
+            <tr>
+                <td><i>The Legend of Baba Yaga</i></td>
+                <td>2009</td>
+            </tr>
+            <tr>
+                <td><i>Baba Yaga: Terror e Mistério</i></td>
+                <td>2018</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Formulário de Feedback</h2>
+    <form action="#" method="post">
+        <label for="conhecia">Você já conhecia essa personagem?</label>
+        <input type="radio" id="sim" name="conhecia" value="sim"><label for="sim">Sim</label>
+        <input type="radio" id="nao" name="conhecia" value="nao"><label for="nao">Não</label>
+
+        <label for="afinidade">Você tem alguma afinidade com o folclore do leste europeu?</label>
+        <input type="radio" id="afinidade_sim" name="afinidade" value="sim"><label for="afinidade_sim">Sim</label>
+        <input type="radio" id="afinidade_nao" name="afinidade" value="nao"><label for="afinidade_nao">Não</label>
+
+        <label for="avaliacao">Avalie esta história:</label>
+        <select id="avaliacao" name="avaliacao">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
